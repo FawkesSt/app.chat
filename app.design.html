@@ -1,86 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/app.design.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Chat Assistant | Design</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/global.css" />
-  <link rel="stylesheet" href="./styles/colors.css" />
-  <link rel="stylesheet" href="./styles/input.css" />
-  <link rel="stylesheet" href="./styles/app.tag.css">
-  <link rel="stylesheet" href="./styles/app.design.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Chat Assistant | Design</title>
-</head>
+  <body onload="getSave()">
+    <header id="main-header">
+      <div id="div-logo">
+        <a href="#"><img class="logo" src="./img/logo.svg" alt="" /></a>
+        <h1>Design Fix</h1>
+        <a
+          href="./index.html"
+          class="link-menu"
+          title="Voltar ao menu principal"
+          >Voltar</a
+        >
+      </div>
+      <div class="find-in-document-container">
+        <input
+          type="text"
+          id="txt-to-find"
+          value=""
+          placeholder="Pesquisar..."
+          oninput="findInDocument({position: 0})"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="Prev"
+          onclick="findInDocument({position: -1})"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="Next"
+          onclick="findInDocument({position: 1})"
+        />
+      </div>
+    </header>
+    <section id="archives">
+      <div class="cards">
+        <h3>Script de redirecionamento</h3>
+        <textarea name="" class="code-samples" cols="80" rows="1">
+<meta http-equiv="refresh" content="5; https://youtube.com.br"></textarea
+        >
+        <p class="pa">
+          O número 5 é o tempo em segundos do redirecionamento, o url é o
+          destino do redirect.
+        </p>
+      </div>
 
-<body onload="getSave()">
-  <header id="main-header">
-    <div id="div-logo">
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
-          style=" fill:#000000;">
-          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <g fill="#ecf0f1">
-              <path
-                d="M148.75732,7.17367c-4.11635,0.0009 -8.22885,1.56608 -11.35889,4.69613l-43.05599,43.05599c-1.11442,1.10725 -1.92498,2.49109 -2.35856,4.00325l-5.77393,20.21224c-0.53392,1.87767 -0.01842,3.89743 1.36474,5.27702c1.02125,1.02125 2.39563,1.57471 3.80029,1.57471c0.4945,0 0.98939,-0.06321 1.47672,-0.20296l20.21924,-5.78092c1.51933,-0.43358 2.90692,-1.2479 3.99626,-2.35156l43.05599,-43.05599c3.03867,-3.03867 4.71012,-7.07305 4.71012,-11.36589c0,-4.29283 -1.67146,-8.3308 -4.71012,-11.36589c-3.13362,-3.13363 -7.24953,-4.69702 -11.36589,-4.69613zM37.625,25.08333c-12.82833,0 -23.29167,10.46333 -23.29167,23.29167v60.91667c0,12.82833 10.46333,23.29167 23.29167,23.29167h5.375v19.70833c0,3.40417 1.90224,6.48667 4.94808,8.02751c1.29,0.60917 2.64859,0.93083 4.01026,0.93083c1.89917,0 3.79833,-0.60917 5.375,-1.79167l35.83333,-26.875h41.20833c12.82833,0 23.29167,-10.46333 23.29167,-23.29167v-60.91667c0,-0.39417 0.00084,-0.78945 -0.03499,-1.14778l-35.4764,35.4764c-1.935,1.97083 -4.40834,3.43972 -7.13168,4.19222l-20.20524,5.76693c-1.11083,0.3225 -2.26086,0.50391 -3.44336,0.50391c-3.29667,0 -6.52419,-1.32415 -8.85335,-3.65332c-3.225,-3.225 -4.43774,-7.96004 -3.2194,-12.33171l5.80192,-20.24023c0.7525,-2.6875 2.22223,-5.12585 4.15723,-7.09668l24.79639,-24.76139z">
-              </path>
-            </g>
-          </g>
-        </svg></a>
-      <h1>Design Fix</h1>
-      <a href="./index.html" class="link-menu" title="Voltar ao menu principal">Voltar</a>
-    </div>
-    <div class="find-in-document-container">
-      <input type="text" id="txt-to-find" value="" placeholder="Pesquisar..."
-        oninput="findInDocument({position: 0})" />
-      <input class="btn" type="button" value="Prev" onclick="findInDocument({position: -1})" />
-      <input class="btn" type="button" value="Next" onclick="findInDocument({position: 1})" />
-    </div>
+      <div class="cards">
+        <h3>Alterar cor de texto consentimento LGPD</h3>
+        <textarea name="" class="code-samples" cols="80" rows="1">
+<style>.fixed{color:white!important;}</style></textarea
+        >
+        <p class="pa">
+          Inserir o codigo acima nos configurações avançadas da página com o
+          formulario > head.
+        </p>
+      </div>
 
-  </header>
-  <section id="archives">
+      <div class="cards">
+        <h3>Forçar favicon em modelo avançado</h3>
+        <p class="pa">
+          Acessar as configurações da máquina pra pegar no código (ctrl + shift
+          + i) o url da imagem do blob desse favicon:
+        </p>
+        <img
+          src="https://lh4.googleusercontent.com/92jRN9f1ig6h0aM6MmncAKMkWh6ej2RdbsgTFMA8RdBhSXI0X06JNyflSxrgGQEAmQjwzM90SM-EzY46l9sblKPtonX95f611ylylzwSCedJSzYQnFr9at5eJiDPzDOR1Q_NtEQ3"
+          alt="Imagem"
+        />
+        <p class="pa">Alterar esse script inserindo o url do blob que pegou:</p>
+        <textarea name="" class="code-samples" cols="80" rows="1">
+<link rel="shortcut icon" href="https://blob.contato.io/machines-favicon/machine-186420-favicon.png"/></textarea
+        >
+        <p class="pa">Inserir o script nas configurações avançadas da página</p>
+        <img
+          src="https://lh4.googleusercontent.com/xFJkOYKuwkbZ1N9DE6Qz9inxbPg8RFkmnPmOiS5cx-y5iLyKU6XoSBFkuZEFyHhL0Ugc_VUZvx6-mnG0YAfXMpGwjB6ELF7fBUd0G-ERSmB2duTM5SbjFQGfcxR_A_w2YuzXm2KR"
+          alt="Imagem"
+        />
+      </div>
+    </section>
 
-    <div class="cards">
-      <h3>Script de redirecionamento</h3>
-      <textarea name="" class="code-samples" cols="80"
-        rows="1"><meta http-equiv="refresh" content="5; https://youtube.com.br"></textarea>
-      <p class="pa">O número 5 é o tempo em segundos do redirecionamento, o url é o destino do redirect.</p>
-    </div>
-
-    <div class="cards">
-      <h3>Alterar cor de texto consentimento LGPD</h3>
-      <textarea name="" class="code-samples" cols="80"
-        rows="1"><style>.fixed{color:white!important;}</style></textarea>
-      <p class="pa">Inserir o codigo acima nos configurações avançadas da página com o formulario > head.</p>
-    </div>
-
-    <div class="cards">
-      <h3>Forçar favicon em modelo avançado</h3>
-      <p class="pa">Acessar as configurações da máquina pra pegar no código (ctrl + shift + i) o url da imagem do blob desse
-        favicon: </p>
-      <img
-        src="https://lh4.googleusercontent.com/92jRN9f1ig6h0aM6MmncAKMkWh6ej2RdbsgTFMA8RdBhSXI0X06JNyflSxrgGQEAmQjwzM90SM-EzY46l9sblKPtonX95f611ylylzwSCedJSzYQnFr9at5eJiDPzDOR1Q_NtEQ3"
-        alt="Imagem">
-      <p class="pa">Alterar esse script inserindo o url do blob que pegou:</p>
-      <textarea name="" class="code-samples" cols="80"
-        rows="1"><link rel="shortcut icon" href="https://blob.contato.io/machines-favicon/machine-186420-favicon.png"/></textarea>
-      <p class="pa">Inserir o script nas configurações avançadas da página</p>
-      <img src="https://lh4.googleusercontent.com/xFJkOYKuwkbZ1N9DE6Qz9inxbPg8RFkmnPmOiS5cx-y5iLyKU6XoSBFkuZEFyHhL0Ugc_VUZvx6-mnG0YAfXMpGwjB6ELF7fBUd0G-ERSmB2duTM5SbjFQGfcxR_A_w2YuzXm2KR" alt="Imagem">
-    </div>
-
-   
-
-
-  </section>
-
-  <script src="./js/index.js"></script>
-  <script src="./js/search.js"></script>
-
-</body>
-
+    <script src="./js/index.js"></script>
+    <script src="./js/search.js"></script>
+  </body>
 </html>
