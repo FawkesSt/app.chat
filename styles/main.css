@@ -1,0 +1,144 @@
+/*-----------------------------Header--------------------------*/
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 1rem;
+  height: 6.25rem;
+  background: #282a36;
+  color: #f8f8f8;
+  font-size: 1.12rem;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.75);
+}
+
+.find-in-document-container{
+  margin-right: 1rem;
+  //*display: flex;*//
+}
+
+#div-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+#div-logo h1 {
+  display: inline;
+  margin-left: 1.25rem;
+}
+
+#div-search {
+  padding-right: 1.25rem;
+}
+
+#txt-to-find {
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0%;
+  border: solid 1px #44475a;  
+  
+}
+
+.link-menu{
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.link-menu:hover{
+  color: #ff79c6;
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+/*-----------------------------New macro controls--------------------------*/
+
+#controls {
+  display: flex;
+  margin-right: 1rem;
+}
+
+#search-macro {
+  border: none;
+  width: 15.5rem;
+  height: 2rem;
+  border-radius: 0%;
+}
+/*-----------------------------Suporte.love-------------------------------*/
+
+.jupiterx-search-form{
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.jupiterx-search-form button{
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  color: #fff;
+  background: #44475a;
+  border: solid 1px #fff; 
+}
+
+.jupiterx-search-form input{
+  border: none;
+  width: 20.3rem;
+  height: 2rem;
+  border: solid 1px #44475a;  
+  border-radius: 0%;
+}
+
+
+
+/*-----------------------------Half screen--------------------------------*/
+
+@media (max-width: 48rem) {
+  .find-in-document-container  {
+    position: absolute;
+    top: 0;
+    margin-top: 1rem;
+    
+    
+  }
+
+  #main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+  }
+
+  #div-logo, .jupiterx-search-form{
+    display: none;
+  }
+
+  #controls{
+    position: absolute;
+    right: 0;
+    margin-top: 3rem;
+ 
+  }
+
+  #search-macro {
+    width: 20rem;
+  }
+
+  #txt-to-find{
+  width: 19.5rem;
+  }
+
+  .field_wrapper{
+    width: auto;
+  }
+
+
+}

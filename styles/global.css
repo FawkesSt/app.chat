@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+  width: 100vw;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/*----------------------------------Buttons----------------------------------*/
+
+.btn {
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  color: #fff;
+  background: #44475a;
+  border-radius: 0%;
+}
+.btn:hover {
+  background: #6272a4;
+  color: #fff;
+}
+
+.add_button {
+  color: #fff;
+  background: #44475a;
+  
+}
+
+.add_button:hover {
+  background: #bd93f9;
+}
+
+.save_button {
+  color: #fff;
+  background: #44475a;
+
+}
+
+.save_button:hover {
+  background: #8be9fd;
+}
+
+.find-in-document-container {
+  right: 0;
+  width: auto;
+  z-index: 9999;
+  position: fixed;
+  border-radius: 0%;
+}
+
+/*----------------------------------Headlight----------------------------------*/
+.txtFoundInSearch {
+  background-color: #4265cf;
+  border: 2px solid #4265cf;
+  
+}

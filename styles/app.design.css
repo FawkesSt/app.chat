@@ -1,0 +1,34 @@
+#archives {
+    margin: 4rem;
+    
+}
+.cards h3, .pa{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards {
+    font-weight: normal;
+    padding: 1rem 2rem;  
+    color: #ffffff;
+    background: #44475a;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    opacity: 0.7;
+}
+
+.cards textarea {
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+.cards img {
+  
+    width: 60%;
+}
+
+.cards:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    transition: 0.2s;
+}

@@ -1,0 +1,65 @@
+/*-----------------------------Note fields--------------------------*/
+
+.field{
+  display: flex;
+}
+
+.field_wrapper{
+  background-color: #e4e4e4;
+  width: 45rem;
+  margin-right: 1rem;
+  -webkit-box-shadow: -3px 3px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px 3px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: -3px 3px 6px 0px rgba(0,0,0,0.75);
+  margin-left: 1rem;
+}
+
+.field_wrapper input {
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  color: #282a36;
+  font-weight: 500;
+}
+
+.btn_copy {
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  color: #fff;
+  background: #44475a;
+  border-radius: 0%;
+}
+
+.btn_copy:hover {
+  background: #50fa7b;
+  color: #fff;
+}
+
+.btn_delete {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: #fff;
+  background: #44475a;
+  border-radius: 0%;
+  border-right: solid 1px white;
+}
+
+.btn_delete:hover {
+  color: #ffffff;
+  background: #ff5555;
+}
+
+.field_wrapper p {
+  display: flex;
+  width: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #282a36;
+  text-align: center;
+  background-color: #ffffff;
+
+
+}
+

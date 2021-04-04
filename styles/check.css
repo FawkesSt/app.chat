@@ -1,0 +1,92 @@
+  
+  #card-checklist{
+    position: absolute;
+    padding: 2rem;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%);
+    width: 700px;
+    height: auto;
+    background: #282a36;
+    -webkit-box-shadow: 0px 11px 11px 3px #9097c5;
+    -moz-box-shadow: 0px 11px 11px 3px #9097c5;
+    box-shadow: 0px 11px 11px 3px #9097c5;
+    border-radius: 3rem;}
+  
+  
+  .checklist-input{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #main-title {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  
+  #sec-title{
+    color:#ff79c6;
+    padding-bottom: 5px;
+    font-weight: lighter;
+  }
+  
+.btn-black, #btn-copy{
+    border: solid white 2px;
+    padding: 5px;
+    margin: ;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 3px;
+    background: #282a36;
+  }
+  
+  .btn-black:hover, #btn-copy:hover{
+    color: #ff79c6;
+  }
+
+  #btn-clear{
+      width: 10rem;
+      height: 2rem;
+      border: solid white 2px;
+      padding: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #fff;
+    background: #282a36;
+  }
+
+  #btn-clear:hover{
+    color: #ff79c6;
+  }
+  
+  label{
+    color:#ff79c6;
+  }
+  .pa-check{
+    color: #fff;
+    text-align: justify;
+    padding: 1rem;
+  }
+  
+  h3{
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 2px;
+  }
+  
+  .element-check{
+    padding: 10px;
+  }
+
+  textarea{
+    background-color: #282a36;
+    color: #282a36;
+    border: hidden;
+    width: 0.1px;
+    height: 0.1px;
+    
+    
+  }
+  
