@@ -17,7 +17,7 @@ let wrapper = document.querySelector(".field_wrapper");
 
 function deleteField(elem) {
     const parent = elem.parentNode;
-    var answer = window.confirm("Tem certeza que deseja mardar sua nota para marte?");
+    var answer = window.confirm("Tem certeza que deseja deletar sua nota?");
         if (answer) {
             parent.parentNode.removeChild(parent);
     }
