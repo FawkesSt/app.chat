@@ -1,7 +1,7 @@
 let newField = (header, value = "") => `
     <div class="field">
         <button class="btn_delete" onclick="deleteField(this)">
-        X
+        <img src="./img/delete.svg" alt="">
         </button>
         <p contenteditable="true">${header}</p>
         <input type="text" class=".inputcss" value="${value}"/>
