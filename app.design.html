@@ -49,12 +49,14 @@
         />
       </div>
     </header>
+
     <section id="archives">
       <div class="cards">
         <h3>Script de redirecionamento</h3>
-        <textarea name="" class="code-samples" cols="80" rows="1">
+        <textarea name="" id="element1" cols="80" rows="1">
 <meta http-equiv="refresh" content="5; https://youtube.com.br"></textarea
         >
+        <button class="btn" onclick="copyElem1();">Copiar</button>
         <p class="pa">
           O número 5 é o tempo em segundos do redirecionamento, o url é o
           destino do redirect.
@@ -63,9 +65,10 @@
 
       <div class="cards">
         <h3>Alterar cor de texto consentimento LGPD</h3>
-        <textarea name="" class="code-samples" cols="80" rows="1">
+        <textarea name="" id="element2" cols="80" rows="1">
 <style>.fixed{color:white!important;}</style></textarea
         >
+        <button class="btn" onclick="copyElem2();">Copiar</button>
         <p class="pa">
           Inserir o codigo acima nos configurações avançadas da página com o
           formulario > head.
@@ -83,18 +86,131 @@
           alt="Imagem"
         />
         <p class="pa">Alterar esse script inserindo o url do blob que pegou:</p>
-        <textarea name="" class="code-samples" cols="80" rows="1">
+        <textarea name="" id="element3" cols="80" rows="1">
 <link rel="shortcut icon" href="https://blob.contato.io/machines-favicon/machine-186420-favicon.png"/></textarea
         >
+        <button class="btn" onclick="copyElem3();">Copiar</button>
         <p class="pa">Inserir o script nas configurações avançadas da página</p>
         <img
           src="https://lh4.googleusercontent.com/xFJkOYKuwkbZ1N9DE6Qz9inxbPg8RFkmnPmOiS5cx-y5iLyKU6XoSBFkuZEFyHhL0Ugc_VUZvx6-mnG0YAfXMpGwjB6ELF7fBUd0G-ERSmB2duTM5SbjFQGfcxR_A_w2YuzXm2KR"
           alt="Imagem"
         />
       </div>
+
+      <div class="cards">
+        <h3>Script de responsividade</h3>
+        <textarea name="" id="element4" cols="30" rows="8">
+          <style>
+          @media (max-width: 700px){
+              .{
+                  
+              }
+          }
+      </style>
+    </textarea
+        >
+        <button class="btn" onclick="copyElem4();">Copiar</button>
+        <h3>Como aplicar utilizar o codigo acima:</h3>
+        <iframe
+          src="https://drive.google.com/file/d/1051lIB9Q_gCmppw63TfW6fTQJ4Pvj9TP/preview"
+          width="500"
+          height="380"
+        ></iframe>
+      </div>
+
+      <div class="cards">
+        <h3>Alterar cores da barra de cookies das páginas LL</h3>
+        <p>O código abaixo deve ser inserido no HEAD da página desejada (ou no head da máquina - caso queira alterar de todas as páginas). Para as cores que o cliente não quer modificar, remova a parte do script. 
+        Se o cliente precisar de ajuda para saber qual o código da cor, pode ser enviado essa tabela pra ele: <a href="https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/">Tabela de cores</a>
+        </p>
+
+        <h4>Cor da barra inteira (inclui fundo dos botões)</h4>
+        <textarea name="" id="element5" cols="30" rows="7">
+          <style>
+            .svelte-1b44g2{ 
+            background-color:#CódigoDaCor!important;
+            }
+            </style>
+        </textarea>
+        <button class="btn" onclick="copyElem5();">Copiar</button>
+        
+        <h4>Cor da fonte do botão Minhas Opções</h4>
+        <textarea name="" id="element6" cols="30" rows="7">
+          <style>
+            .hknPreferences.svelte-1b44g2{ 
+            color:#CódigoDaCor!important;
+            }
+            </style>
+        </textarea>
+        <button class="btn" onclick="copyElem6();">Copiar</button>
+
+        <h4>Cor da borda do botão Minhas Opções</h4>
+        <textarea name="" id="element7" cols="30" rows="7">
+          <style>
+            .hknPreferences.svelte-1b44g2{ 
+            border:#CódigoDaCor!important;
+            }
+            </style>            
+        </textarea>
+        <button class="btn" onclick="copyElem7();">Copiar</button>
+
+        <h4>Cor da fonte do botão Aceito</h4>
+        <textarea name="" id="element8" cols="30" rows="7">
+          <style>
+            .hknAcceptAll.svelte-1b44g2{ 
+            color:#CódigoDaCor!important;
+            }
+            </style>            
+        </textarea>
+        <button class="btn" onclick="copyElem8();">Copiar</button>
+
+        <h4>Cor da borda do botão Aceito</h4>
+        <textarea name="" id="element9" cols="30" rows="7">
+          <style>
+            .hknAcceptAll.svelte-1b44g2{ 
+            border:#CódigoDaCor!important;
+            }
+            </style>
+        </textarea>
+        <button class="btn" onclick="copyElem9();">Copiar</button>
+
+        <h4>Cor da sombra do botão Aceito</h4>
+        <textarea name="" id="element10" cols="30" rows="7">
+          <style>
+            .hknAcceptAll.svelte-1b44g2{ 
+            box-shadow:#CódigoDaCor!important;
+            }
+            </style> 
+        </textarea>
+        <button class="btn" onclick="copyElem10();">Copiar</button>
+
+        <h4>Cor da fonte do texto Site</h4>
+        <textarea name="" id="element11" cols="30" rows="7">
+          <style>
+            .hknConsentText.svelte-1b44g2{ 
+            color:#CódigoDaCor!important;
+            }
+            </style>
+        </textarea>
+        <button class="btn" onclick="copyElem11();">Copiar</button>
+
+        <h4>Cor da fonte do texto Pol.Priv. e Termos de Uso</h4>
+        <textarea name="" id="element12" cols="30" rows="7">
+          <style>
+            a.hknConsentText.svelte-1b44g2{ 
+            color:#CódigoDaCor!important;
+            }
+            </style>  
+        </textarea>
+        <button class="btn" onclick="copyElem12();">Copiar</button>
+
+      </div>
+
+
     </section>
 
     <script src="./js/index.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/design.js"></script>
   </body>
 </html>
